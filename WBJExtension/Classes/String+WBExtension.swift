@@ -13,7 +13,7 @@ extension String {
     
     /// md5 加密
     /// - Returns: 加密后字符串
-    func md5Encrypt() -> String {
+    public func md5Encrypt() -> String {
         let utf8String = self.cString(using: .utf8)
         let utf8StrLength = CUnsignedInt(self.lengthOfBytes(using: .utf8))
         
@@ -33,7 +33,7 @@ extension String {
     ///   - key: 密钥
     ///   - padding: 加密类型
     /// - Returns: 加密后字符串
-    func AESEncrypt(key: String, padding: PaddingProtocol) -> String? {
+    public func AESEncrypt(key: String, padding: PaddingProtocol) -> String? {
         guard let data = self.data(using: .utf8) else {
             return nil
         }
@@ -48,7 +48,7 @@ extension String {
     
     /// 判断手机号
     /// - Returns: 结果
-    func isMatchMobile() -> Bool {
+    public func isMatchMobile() -> Bool {
         if self.removeEmpty().count == 11 {
             return true
         }
@@ -56,7 +56,7 @@ extension String {
     }
     
     /// 去除空格
-    func removeEmpty() -> String {
+    public func removeEmpty() -> String {
         return self.replacingOccurrences(of: " ", with: "")
     }
 }
