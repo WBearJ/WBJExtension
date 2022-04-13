@@ -45,4 +45,18 @@ extension String {
             return nil
         }
     }
+    
+    /// 判断手机号
+    /// - Returns: 结果
+    func isMatchMobile() -> Bool {
+        if self.removeEmpty().count == 11 {
+            return true
+        }
+        return false
+    }
+    
+    /// 去除空格
+    func removeEmpty() -> String {
+        return self.replacingOccurrences(of: " ", with: "")
+    }
 }
