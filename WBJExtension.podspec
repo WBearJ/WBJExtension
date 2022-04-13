@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WBJExtension'
-  s.version          = '0.0.5'
+  s.version          = '0.0.4'
   s.summary          = '通用扩展'
 
 # This description is used to generate tags and improve search results.
