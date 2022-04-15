@@ -7,9 +7,10 @@
 
 import Foundation
 
-extension UIView {
-///////////////////////////////////////////////////////////////////////////////////////////////////
-    public var left: CGFloat {
+
+public extension UIView {
+    /// left coordinate
+    var left: CGFloat {
         get {
             return frame.origin.x
         }
@@ -18,8 +19,8 @@ extension UIView {
         }
     }
     
-///////////////////////////////////////////////////////////////////////////////////////////////////
-    public var right: CGFloat {
+    /// right coordinate
+    var right: CGFloat {
         get {
             return frame.origin.x + frame.size.width
         }
@@ -28,8 +29,8 @@ extension UIView {
         }
     }
     
-///////////////////////////////////////////////////////////////////////////////////////////////////
-    public var top: CGFloat {
+    /// top coordinate
+    var top: CGFloat {
         get {
             return frame.origin.y
         }
@@ -38,8 +39,8 @@ extension UIView {
         }
     }
     
-///////////////////////////////////////////////////////////////////////////////////////////////////
-    public var bottom: CGFloat {
+    /// bottom coordinate
+    var bottom: CGFloat {
         get {
             return frame.origin.y + frame.size.height
         }
@@ -48,8 +49,8 @@ extension UIView {
         }
     }
     
-///////////////////////////////////////////////////////////////////////////////////////////////////
-    public var width: CGFloat {
+    /// width
+    var width: CGFloat {
         get {
             return frame.size.width
         }
@@ -58,8 +59,8 @@ extension UIView {
         }
     }
     
-///////////////////////////////////////////////////////////////////////////////////////////////////
-    public var height: CGFloat {
+    /// height
+    var height: CGFloat {
         get {
             return frame.size.height
         }
@@ -68,8 +69,8 @@ extension UIView {
         }
     }
     
-///////////////////////////////////////////////////////////////////////////////////////////////////
-    public var centerX: CGFloat {
+    /// x axis coordinate
+    var centerX: CGFloat {
         get {
             return center.x
         }
@@ -78,8 +79,8 @@ extension UIView {
         }
     }
  
-///////////////////////////////////////////////////////////////////////////////////////////////////
-    public var centerY: CGFloat {
+    /// y axis coordinate
+    var centerY: CGFloat {
         get {
             return center.y
         }
@@ -89,7 +90,7 @@ extension UIView {
     }
 }
 
-@IBDesignable extension UIView {
+@IBDesignable public extension UIView {
     // MARK: =========== border
     @IBInspectable var borderColor: UIColor? {
         set {
